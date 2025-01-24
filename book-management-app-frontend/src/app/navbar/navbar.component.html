@@ -1,0 +1,25 @@
+<nav>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        Home
+    </a>
+    <a routerLink="/auth/login" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        *ngIf="!isLoggedIn()">
+        Login
+    </a>
+    <a routerLink="/auth/register" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        *ngIf="!isLoggedIn()">
+        Register
+    </a>
+    <a routerLink="/books" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngIf="isLoggedIn()">
+        Books
+    </a>
+    <a routerLink="/books/add" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        *ngIf="isLoggedIn()">
+        Add Book
+    </a>
+    <a routerLink="/admin" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        *ngIf="isLoggedIn() && isAdmin()">
+        Admin Dashboard
+    </a>
+    <a (click)="logout()" *ngIf="isLoggedIn()">Logout</a>
+</nav>

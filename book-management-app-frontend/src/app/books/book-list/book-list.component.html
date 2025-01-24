@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.genre }}</td>
+            <td>
+                <!-- Navigate to the delete confirmation page -->
+                <button [routerLink]="['/books/delete', book._id]">Delete</button>
+                <!-- Navigate to the edit page -->
+                <button [routerLink]="['/books/edit', book._id]">Edit</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

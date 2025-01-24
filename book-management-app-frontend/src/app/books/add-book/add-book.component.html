@@ -1,0 +1,22 @@
+<div class="add-book-container">
+    <h2>Add a New Book</h2>
+    <form (ngSubmit)="onAddBook()">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" [(ngModel)]="title" name="title" required
+                placeholder="Enter the book title" />
+        </div>
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" [(ngModel)]="author" name="author" required
+                placeholder="Enter the author name" />
+        </div>
+        <div>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" [(ngModel)]="genre" name="genre" required
+                placeholder="Enter the book genre" />
+        </div>
+        <button type="submit">Add Book</button>
+    </form>
+    <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+</div>

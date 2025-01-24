@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: start;
+    /* Align items to the left */
+    align-items: center;
+    background-color: #f9f6f3;
+    /* Light beige background */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    /* Add a clean font */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    /* Darker text */
+    font-weight: 600;
+    /* Slightly bold */
+    margin-right: 20px;
+    /* Add spacing between links */
+    padding: 8px 0;
+    /* Vertical padding */
+    border-bottom: 2px solid transparent;
+    /* Transparent border by default */
+    transition: border-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+}
+
+nav a:hover {
+    color: #0056b3;
+    /* Change color on hover */
+    border-bottom: 2px solid #0056b3;
+    /* Add border on hover */
+}
+
+nav a.active {
+    border-bottom: 2px solid #0056b3;
+    /* Highlight active link with border */
+    color: #0056b3;
+    /* Match active color */
+}
+
+nav .logo {
+    font-size: 24px;
+    /* Large font for the logo */
+    font-weight: bold;
+    color: #5a5a5a;
+    /* Slightly lighter color for the logo */
+    margin-right: 40px;
+    /* Space between logo and links */
+}

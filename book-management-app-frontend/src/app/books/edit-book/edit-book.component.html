@@ -1,0 +1,21 @@
+<div class="edit-book-container">
+    <h2>Edit Book</h2>
+
+    <form (ngSubmit)="onEditBook()">
+        <label for="title">Title:</label>
+        <input id="title" type="text" [(ngModel)]="bookData.title" name="title" required />
+
+        <label for="author">Author:</label>
+        <input id="author" type="text" [(ngModel)]="bookData.author" name="author" required />
+
+        <label for="genre">Genre:</label>
+        <input id="genre" type="text" [(ngModel)]="bookData.genre" name="genre" />
+
+        <button type="submit">Save Changes</button>
+        <button [routerLink]="['/books']">Cancel</button>
+    </form>
+
+    <!-- Success/Error Messages -->
+    <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+    <p *ngIf="isUpdated" style="color: green;">Book updated successfully! Redirecting...</p>
+</div>
