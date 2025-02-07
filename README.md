@@ -5,18 +5,6 @@
 ![GitHub stars](https://img.shields.io/github/stars/nikosn92/book-management-app?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/nikosn92/book-management-app?style=social)
 
-## 📌 Table of Contents
-
-- [📌 Introduction](#introduction)
-- [🚀 Features](#features)
-- [🛠️ Technologies Used](#technologies-used)
-- [📂 Project Structure](#project-structure)
-- [📦 Installation](#installation)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [🔧 Usage](#usage)
-- [📜 API Documentation](#api-documentation)
-- [📜 License](#license)
 
 
 ## 📌 Introduction
