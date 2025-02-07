@@ -1,32 +1,50 @@
-# Book Management App
+# 📚 Book Management App
 
- 
-## Introduction
+![GitHub repo size](https://img.shields.io/github/repo-size/nikosn92/book-management-app)
+![GitHub contributors](https://img.shields.io/github/contributors/nikosn92/book-management-app)
+![GitHub stars](https://img.shields.io/github/stars/nikosn92/book-management-app?style=social)
+![GitHub forks](https://img.shields.io/github/forks/nikosn92/book-management-app?style=social)
 
-The **Book Management App** is a web application designed for managing a book collection. It allows users to perform CRUD (Create, Read, Update, Delete) operations on book records and includes an admin dashboard for viewing the Database.
+## 📌 Table of Contents
+
+- [📌 Introduction](#introduction)
+- [🚀 Features](#features)
+- [🛠️ Technologies Used](#technologies-used)
+- [📂 Project Structure](#project-structure)
+- [📦 Installation](#installation)
+  - [Backend Setup](#backend-setup)
+  - [Frontend Setup](#frontend-setup)
+- [🔧 Usage](#usage)
+- [📜 API Documentation](#api-documentation)
+- [📜 License](#license)
+
+
+## 📌 Introduction
+
+The **Book Management App** is a web application designed for managing a book collection. It allows users to perform CRUD (Create, Read, Update, Delete) operations on book records and includes an admin dashboard for viewing the database.
 
 ---
 
-## Features
+## 🚀 Features
 
-- **User Authentication**:
+- 🔑 **User Authentication**:
   - Secure login and registration system.
   - JWT-based authentication.
 
-- **Book Management**:
+- 📖 **Book Management**:
   - Add, view, update, and delete books.
   - Responsive design for seamless user experience.
 
-- **Admin Dashboard**:
+- 🛠 **Admin Dashboard**:
   - View all users.
   - View all books.
 
-- **API Documentation**:
+- 📜 **API Documentation**:
   - Accessible through Swagger for easy reference.
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 ### Frontend:
 - [Angular](https://angular.io/)
@@ -41,9 +59,7 @@ The **Book Management App** is a web application designed for managing a book co
 
 ---
 
-## Project Structure
-
-The project is organized into two main directories:
+## 📂 Project Structure
 
 ### Backend (`book-management-app-backend`):
 - **controllers/**: Contains logic for API endpoints.
@@ -67,32 +83,52 @@ The project is organized into two main directories:
 
 ---
 
-## Installation
+## 📦 Installation
 
-To set up the project locally, follow the instructions below:
+To set up the project locally, follow these steps:
 
 ### Backend Setup
+```bash
+# Navigate to the backend directory
+cd book-management-app-backend
 
-1. Navigate to the backend directory: `cd book-management-app-backend`
-2. Install dependencies: `npm install`
-3. Configure environment variables:
-   - Create a `.env` file in the backend directory and add the following:
-     - `PORT=5000`
-     - `MONGODB_URI=your_mongodb_connection_string`
-     - `JWT_SECRET=your_jwt_secret`
-4. Start the backend server: `npm start`
+# Install dependencies
+npm install
+
+# Configure environment variables
+cp .env.example .env
+
+# Edit the .env file and add:
+# PORT=5000
+# MONGODB_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret
+
+# Start the backend server
+npm start
+```
 
 ### Frontend Setup
+```bash
+# Navigate to the frontend directory
+cd book-management-app-frontend
 
-1. Navigate to the frontend directory: `cd book-management-app-frontend`
-2. Install dependencies: `npm install`
-3. Configure environment variables:
-   - Edit the `src/environments/environment.ts` file:
-     - `export const environment = { production: false, apiUrl: 'http://localhost:5000/api' };`
-4. Start the frontend application: `ng serve`
-5. Open the application in your browser at `http://localhost:4200`.
+# Install dependencies
+npm install
 
-## Usage
+# Configure environment variables
+# Edit the src/environments/environment.ts file:
+# export const environment = { production: false, apiUrl: 'http://localhost:5000/api' };
+
+# Start the frontend application
+ng serve
+
+# Open the application in your browser
+http://localhost:4200
+```
+
+---
+
+## 🔧 Usage
 
 - **Register**: Create a new account.
 - **Login**: Authenticate with your credentials.
@@ -101,13 +137,27 @@ To set up the project locally, follow the instructions below:
 - **Edit/Delete Books**: Modify or remove existing books.
 - **Admin Dashboard**: View all users and books.
 
-## API Documentation
+---
+
+## 📜 API Documentation
 
 The backend API is documented using Swagger.
 
-1. Ensure the backend server is running.
-2. Open the Swagger documentation in your browser: `http://localhost:5000/api-docs`.
+```bash
+# Ensure the backend server is running
 
-## License
+# Open Swagger documentation in your browser:
+http://localhost:5000/api-docs
+```
+
+---
+
+ 
+
+## 📜 License
 
 This project is licensed under the [MIT License](https://opensource.org/license/mit)
+
+---
+ 
+
